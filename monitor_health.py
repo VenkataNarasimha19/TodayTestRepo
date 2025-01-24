@@ -13,7 +13,7 @@ def get_system_health():
         "Disk Usage (%)": psutil.disk_usage('/').percent,
         "Network Sent (MB)": psutil.net_io_counters().bytes_sent / (1024 * 1024),
         "Network Received (MB)": psutil.net_io_counters().bytes_recv / (1024 * 1024),
-        "Uptime (seconds)": time.time() - psutil.boot_time()
+        "Uptime (seconds)": round(time.time() - psutil.boot_time(), 2)
     }
     return health_data
 
@@ -25,8 +25,10 @@ def print_health_status():
     print("-----------------------------\n")
 
 if __name__ == "__main__":
-    while True:
+    max_iterations = 3  # Set the number of iterations you want
+    for _ in range(max_iterations):
         print_health_status()
         time.sleep(10)  # Monitor every 10 seconds
+
 
 
