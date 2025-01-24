@@ -1,5 +1,7 @@
+// Hello.java
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Welcome to Git's online course");
+        // Print a greeting message to the console
+        System.out.println("Welcome to Jenkins and GitHub integration!");
     }
 }
