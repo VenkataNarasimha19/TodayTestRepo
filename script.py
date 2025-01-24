@@ -8,8 +8,10 @@ print(a)
 print(b)
 print(c)
 print(d)
-my_sum=sum(a,b,c,d)
-print(my_sum)
+
+total_sum = sum([a, b, c, d])  # Use a list or tuple
+print("The sum of a, b, c, and d is:", total_sum)
+
 mylist=[1,2,3,4,5,6,7,8,9]
 print(mylist)
 
