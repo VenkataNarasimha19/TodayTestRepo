@@ -28,3 +28,6 @@ if __name__ == "__main__":
     while True:
         print_health_status()
         time.sleep(10)  # Monitor every 10 seconds
+
+print("Script End")
+
