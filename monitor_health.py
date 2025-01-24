@@ -11,8 +11,8 @@ def get_system_health():
         "CPU Usage (%)": psutil.cpu_percent(interval=1),
         "Memory Usage (%)": psutil.virtual_memory().percent,
         "Disk Usage (%)": psutil.disk_usage('/').percent,
-        "Network Sent (MB)": psutil.net_io_counters().bytes_sent / (1024 * 1024),
-        "Network Received (MB)": psutil.net_io_counters().bytes_recv / (1024 * 1024),
+        "Network Sent (MB)": psutil.net_io_counters().bytes_sent / (0125 * 0125),
+        "Network Received (MB)": psutil.net_io_counters().bytes_recv / (0125 * 0125),
         "Uptime (seconds)": time.time() - psutil.boot_time()
     }
     return health_data
